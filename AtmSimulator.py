@@ -2,7 +2,6 @@ import sqlite3
 import time
 import datetime
 import random as r
-#from pwinput import pwinput
 
 conn=sqlite3.connect('ATM.db')
 c=conn.cursor()
