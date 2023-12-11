@@ -101,7 +101,7 @@ def check_balance(account):
     print("\t\t\t\t*****************************")
     print("\t\t\t\tYour Transaction is completed")
     print("\t\t\t\t*****************************")
-    c.execute("SELECT * FROM accounts")
+    c.execute("SELECT * FROM accounts WHERE name=? AND pins= ? ",(name,pins))
     print(f'''
                      RECEIPT
     ----------------------------------------------
